@@ -267,15 +267,130 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .choose-img img {
   width: 100px;
 }
+
+.choose-img p {
+  padding: 0 2rem;
+}
 /* why choose END */
 
+/* gallery */
+.our-gallery {
+  padding: 2rem 7%;
+  background: var(--otherclr);
+}
 
+.our-gallery h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  padding: 30px 0px 24px;
+}
+
+.our-gallery h2 span {
+  color: #000;
+}
+
+.main-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inner-gallery {
+  flex: 1 1 300px;
+}
+
+/* gallery END */
+
+/* Contact */
+.contact-section {
+  padding: 2rem 7%;
+}
+
+.contact-section h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  padding: 2rem;
+}
+
+.contact-section h2 span {
+  color: var(--otherclr);
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-container-half {
+  flex: 1;
+}
+
+.contact-form {
+  width: 70%;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.contact-form-row {
+  width: 100%;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+textarea {
+  resize: none;
+  padding: 18px;
+  height: 100px;
+}
+
+input[type='text'],
+input[type='email']{
+  padding: 18px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--btnclr);
+}
+
+.inner-centered {
+  margin: 0 auto;
+  width: 70%
+}
+
+.contact-container-half .inner-centered h4 {
+  font-size: 24px;
+  color: var(--btnclr);
+  margin-bottom: 12px;
+}
+
+.contact-container-half .inner-centered ul {
+  margin-bottom: 30px;
+}
+
+.contact-container-half .inner-centered ul li {
+  margin-bottom: 6px;
+}
+/* Contact END */
 
 /* footer */
 footer {
@@ -357,6 +472,25 @@ footer {
 
   .inner-menu-content span {
 
+  }
+
+  .contact-container {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  .contact-container-half {
+    flex: initial;
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .inner-centered {
+    width: 90%;
   }
 }
 
