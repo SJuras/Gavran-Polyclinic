@@ -22,3 +22,10 @@ window.addEventListener("scroll", function(){
   headerContainer.classList.toggle("borderDown", window.scrollY > 100);
 });
 // END
+
+// navbar toggle
+function navbarToggle(){
+  const navbarMenu = document.querySelector('.navbar');
+  navbarMenu.classList.toggle('active');
+}
+// navbar toggle END
