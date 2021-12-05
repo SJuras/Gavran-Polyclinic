@@ -30,6 +30,37 @@ img {
   height: 100%;
 }
 
+/* Scroll Up Button */
+#btnScrollTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  background-color: var(--btnclr);
+  color: #79ffca;
+  border-color: var(--btnclr);
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#btnScrollTop i {
+  font-size: 24px;
+}
+
+#btnScrollTop.visible {
+  opacity: 1;
+}
+
+#btnScrollTop:active {
+  box-shadow: 0 5px 20px rgba(121, 255, 202, 0.3);
+}
+/* Scroll Up Button END */
+
 .logo-inner {
   display: flex;
   justify-content: center;
