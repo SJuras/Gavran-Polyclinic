@@ -142,6 +142,10 @@ img {
   z-index: 1000;
 }
 
+.header.borderDown {
+  border-bottom: 1px solid var(--btnclr);
+}
+
 .main-header {
   padding: 1rem 5%;
   display: flex;
@@ -153,6 +157,10 @@ img {
 .menu-icons {
   display: flex;
   align-items: center;
+}
+
+.main-header.visible-2 {
+  display: none;
 }
 
 .inner-menu-icons {
@@ -258,7 +266,7 @@ img {
 
 /* about */
 .our-services {
-  padding: 2rem 5%;
+  padding: 5rem 5% 2rem;
   background: var(--btnclr);
 }
 
@@ -357,7 +365,7 @@ img {
 
 /* gallery */
 .our-gallery {
-  padding: 2rem 7%;
+  padding: 5rem 5% 2rem;
   background: var(--otherclr);
 }
 
@@ -387,7 +395,7 @@ img {
 
 /* Contact */
 .contact-section {
-  padding: 2rem 7%;
+  padding: 5rem 5% 2rem;
 }
 
 .contact-section h2 {

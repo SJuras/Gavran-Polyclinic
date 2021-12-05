@@ -11,4 +11,14 @@ btnScrollTop.addEventListener("click", function(){
     behavior: "smooth"
   });
 });
-// scroll up button END 
+// scroll up button END
+
+
+// scrolling down hides info section in header
+const headerContainer = document.querySelector('.header');
+const headerInfo = document.querySelector('.main-header');
+window.addEventListener("scroll", function(){
+  headerInfo.classList.toggle("visible-2", window.scrollY > 100);
+  headerContainer.classList.toggle("borderDown", window.scrollY > 100);
+});
+// END
