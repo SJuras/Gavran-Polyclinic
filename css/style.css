@@ -30,6 +30,22 @@ img {
   height: 100%;
 }
 
+.logo-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-inner h2 {
+  color: rgba(0,0,0,0.7);
+}
+
+.logo-img {
+  width: 40px;
+  height: auto;
+  margin-right: 12px;
+}
+
 .btn-container {
   display: flex;
 }
@@ -38,24 +54,38 @@ img {
   display: block;
   padding: 1rem 2rem;
   background: var(--otherclr);
+  border: 2px solid var(--otherclr);
   color: #fff;
   border-radius: 15px;
   font-size: 1.2rem;
   margin-right: 12px;
+  transition: 0.4s;
 }
 
 .btn-2 {
   display: block;
   padding: 1rem 2rem;
   background: var(--btnclr);
+  border: 2px solid var(--btnclr);
   color: #fff;
   border-radius: 15px;
   font-size: 1.2rem;
+  transition: 0.4s;
 }
 
 .btn:hover,
 .btn-2:hover {
-  background: var(--clr);
+  background: #fff;
+}
+
+.btn:hover {
+  border: 2px solid var(--otherclr);
+  color: var(--otherclr);
+}
+
+.btn-2:hover {
+  background: #fff;
+  color: var(--btnclr);
 }
 
 .submit-btn {
@@ -438,6 +468,22 @@ footer {
 
 .footer-box-smaller {
   width: 33%;
+}
+
+.footer-box-smaller a h4 {
+  color: var(--btnclr);
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-logo-img {
+  width: 40px;
+  height: auto;
+  margin-right: 6px;
 }
 
 .footer-box-bigger {
