@@ -737,6 +737,20 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .btn,
+  .btn-2 {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
   .footer-box-bigger {
     flex-direction: column;
   }
